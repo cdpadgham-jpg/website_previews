@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eze-Flow Plumbing Melbourne | 5-Star Rated Licensed Plumbers</title>
+    <meta name="description" content="Need a reliable plumber in Melbourne? Eze-Flow Plumbing offers 24/7 emergency repairs, blocked drain clearing, and hot water services. Call +61 439 025 458 for a free quote.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Eze-Flow Plumbing Melbourne | 5-Star Rated Licensed Plumbers">
+    <meta property="og:description" content="Fast, professional, and affordable plumbing solutions across Melbourne 24/7.">
+    <meta property="og:type" content="website">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap');
+
+        :root {
+            --primary: #0047AB;
+            --accent: #F7941D;
+            --dark: #1a1a1a;
+            --light: #f8f9fa;
+            --white: #ffffff;
+            --gray: #666666;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--white);
+        }
+
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.2;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: var(--white);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .nav-phone {
+            background: var(--primary);
+            color: var(--white);
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .nav-phone:hover {
+            background: var(--accent);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, #002e6e 100%);
+            color: var(--white);
+            padding: 100px 0 140px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background: var(--white);
+            clip-path: polygon(0 100%, 100% 100%, 100% 0);
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--white);
+            padding: 18px 40px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(247, 148, 29, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(247, 148, 29, 0.4);
+            background: #e68516;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .section-title .underline {
+            width: 80px;
+            height: 4px;
+            background: var(--accent);
+            margin: 0 auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border-bottom: 4px solid transparent;
+            text-align: center;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-bottom: 4px solid var(--accent);
+        }
+
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(0, 71, 171, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            color: var(--primary);
+        }
+
+        .service-card h3 {
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+
+        .service-card p {
+            color: var(--gray);
+            font-size: 0.95rem;
+        }
+
+        /* About Section */
+        .about {
+            background-color: var(--light);
+            padding: 100px 0;
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .about-badge {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            flex: 0 0 350px;
+            text-align: center;
+        }
+
+        .stars {
+            color: var(--accent);
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .about-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 100px 0;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        details {
+            background: var(--light);
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        summary {
+            padding: 20px 25px;
+            font-weight: 700;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--primary);
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        summary::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--accent);
+            transition: var(--transition);
+        }
+
+        details[open] summary::after {
+            content: '-';
+            transform: rotate(180deg);
+        }
+
+        details p {
+            padding: 0 25px 20px;
+            color: var(--gray);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: var(--white);
+            padding: 80px 0 40px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .footer-info h4 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: var(--accent);
+        }
+
+        .footer-contact p {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 30px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .hero p { font-size: 1.1rem; }
+            .about-badge { flex: 1 1 100%; }
+            .nav-phone { font-size: 0.9rem; padding: 8px 15px; }
+        }
+
+        /* Icons (SVG) */
+        .icon { width: 32px; height: 32px; fill: currentColor; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">EZE-FLOW <span>PLUMBING</span></a>
+                <a href="tel:+61439025458" class="nav-phone">Call Now: 0439 025 458</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Melbourne’s Most Reliable 5-Star Plumbing Specialists</h1>
+            <p>From emergency repairs to hot water installations, Eze-Flow Plumbing provides fast, professional, and affordable solutions across Melbourne 24/7.</p>
+            <a href="tel:+61439025458" class="cta-button">Get a Free Quote</a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Expert Services</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M12,2L4.5,20.29L5.21,21L12,18L18.79,21L19.5,20.29L12,2Z"/></svg>
+                    </div>
+                    <h3>24/7 Emergency Plumbing</h3>
+                    <p>Burst pipes or major leaks can't wait. Our rapid-response team is available around the clock to secure your property and fix the issue fast.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12C20,14.4 18.9,16.5 17.2,18H15V16A2,2 0 0,0 13,14H9V12A2,2 0 0,0 7,10V8H9A2,2 0 0,0 11,6V5.4C11.3,5.4 11.6,5.4 12,5.4A8,8 0 0,1 12,4Z"/></svg>
+                    </div>
+                    <h3>Blocked Drains & CCTV</h3>
+                    <p>We use advanced high-pressure jetting and CCTV camera inspections to clear stubborn blockages and provide long-term drainage solutions.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg class="icon" viewBox="0 0 24 24"><path d="M12,3L2,12H5V20H19V12H22L12,3M12,8.5C12.8,8.5 13.5,9.2 13.5,10V11H10.5V10C10.5,9.2 11.2,8.5 12,8.5M15,19H9V18H15V19M15,16H9V15H15V16M15,13H9V12H15V13Z"/></svg>
+                    </div>
+                    <h3>Hot Water & Gas Services</h3>
+                    <p>Specialising in the installation, repair, and maintenance of all major hot water systems and gas appliances to keep your home running safely.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Professional Care You Can Trust</h2>
+                    <p>At Eze-Flow Plumbing, we take the stress out of your plumbing needs. Based in Melbourne, we have built a reputation for excellence, backed by a perfect 5-star rating from over 65 local residents.</p>
+                    <p>Our licensed team is committed to punctuality, transparent pricing, and high-quality workmanship. Whether it is a minor tap repair or a complex commercial project, we treat every job with the same level of professional care and attention to detail.</p>
+                </div>
+                <div class="about-badge">
+                    <div class="stars">★★★★★</div>
+                    <h3 style="color: var(--primary); margin-bottom: 10px;">5-Star Rated Service</h3>
+                    <p>Trusted by 65+ Melbourne Homeowners for Quality & Reliability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="faq-container">
+                <details>
+                    <summary>How quickly can you respond to an emergency plumbing call in Melbourne?</summary>
+                    <p>We offer 24/7 emergency services and aim to have a licensed plumber at your Melbourne property as quickly as possible to prevent water damage.</p>
+                </details>
+                <details>
+                    <summary>Are your plumbers fully licensed and insured?</summary>
+                    <p>Yes, every member of the Eze-Flow team is fully licensed, insured, and highly trained to comply with all Australian safety and building standards.</p>
+                </details>
+                <details>
+                    <summary>Do you provide fixed quotes before starting work?</summary>
+                    <p>Absolutely. We provide clear, upfront pricing after assessing the job so you know exactly what to expect with no hidden fees.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h4>Eze-Flow Plumbing</h4>
+                    <p>Your local Melbourne plumbing specialists. Providing quality workmanship and 24/7 emergency support when you need it most.</p>
+                </div>
+                <div class="footer-contact">
+                    <h4 style="color: var(--white); font-size: 1.2rem;">Contact Us</h4>
+                    <p><strong>Phone:</strong> <a href="tel:+61439025458" style="color: var(--accent); text-decoration: none;">+61 439 025 458</a></p>
+                    <p><strong>Location:</strong> Melbourne, VIC</p>
+                    <p><strong>Available:</strong> 24 Hours / 7 Days</p>
+                </div>
+                <div class="footer-cta">
+                    <a href="tel:+61439025458" class="cta-button" style="width: 100%; text-align: center;">Call Now</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Eze-Flow Plumbing Melbourne. All Rights Reserved. Licensed & Insured Plumbers.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
