@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24/7 Emergency Plumber Melbourne | Fast Reliable Plumbing Services</title>
+    <meta name="description" content="Need an emergency plumber in Melbourne? Melbourne 24 Hour Plumbing offers 24/7 repairs for blocked drains, hot water, and burst pipes. Call 0419 990 092 for fast service.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="24/7 Emergency Plumber Melbourne | Fast Reliable Plumbing Services">
+    <meta property="og:description" content="Need an emergency plumber in Melbourne? Melbourne 24 Hour Plumbing offers 24/7 repairs for blocked drains, hot water, and burst pipes.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://melbourne24hourplumbing.com.au">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap');
+
+        :root {
+            --primary: #0056b3;
+            --accent: #d32f2f;
+            --dark: #1a1a1a;
+            --light: #f8f9fa;
+            --white: #ffffff;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: -0.5px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header & Navigation */
+        header {
+            background: var(--white);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .nav-phone {
+            background: var(--accent);
+            color: var(--white);
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .nav-phone:hover {
+            background: #b71c1c;
+            transform: scale(1.05);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(0, 86, 179, 0.95), rgba(0, 40, 85, 0.95)), url('https://images.unsplash.com/photo-1581244276891-9979c4501275?auto=format&fit=crop&q=80&w=1920');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            padding: 120px 0 100px;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--white);
+            padding: 20px 40px;
+            font-size: 1.2rem;
+            font-weight: 800;
+            text-decoration: none;
+            border-radius: 50px;
+            text-transform: uppercase;
+            box-shadow: 0 10px 20px rgba(211, 47, 47, 0.3);
+            transition: var(--transition);
+            border: 2px solid transparent;
+        }
+
+        .cta-button:hover {
+            background: var(--white);
+            color: var(--accent);
+            border-color: var(--accent);
+            transform: translateY(-3px);
+        }
+
+        /* Services Section */
+        .services {
+            padding: 100px 0;
+            background: var(--light);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .section-title .underline {
+            width: 80px;
+            height: 4px;
+            background: var(--accent);
+            margin: 0 auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: var(--transition);
+            border-bottom: 5px solid var(--primary);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .service-card h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .service-card p {
+            color: #666;
+        }
+
+        /* About Section */
+        .about {
+            padding: 100px 0;
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        .about-content {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .about-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 25px;
+            color: var(--primary);
+        }
+
+        .about-content p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 100px 0;
+            background: var(--light);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        details {
+            background: var(--white);
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        summary {
+            padding: 20px 25px;
+            font-weight: 700;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--primary);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1rem;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::after {
+            content: '+';
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: var(--accent);
+            transition: var(--transition);
+        }
+
+        details[open] summary::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-content {
+            padding: 0 25px 25px;
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: var(--white);
+            padding: 80px 0 40px;
+            text-align: center;
+        }
+
+        .footer-logo {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .footer-logo span {
+            color: var(--accent);
+        }
+
+        .footer-contact {
+            margin-bottom: 40px;
+        }
+
+        .footer-phone {
+            font-size: 2rem;
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 800;
+            display: block;
+            margin: 10px 0;
+            transition: var(--transition);
+        }
+
+        .footer-phone:hover {
+            color: var(--accent);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 30px;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 80px 0 60px;
+                clip-path: none;
+            }
+            .about {
+                text-align: center;
+            }
+            .nav-phone {
+                padding: 8px 12px;
+                font-size: 0.8rem;
+            }
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero h1, .hero p, .hero .cta-button {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+
+        .hero p { animation-delay: 0.2s; }
+        .hero .cta-button { animation-delay: 0.4s; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">MELBOURNE <span>24HR</span> PLUMBING</a>
+                <a href="tel:+61419990092" class="nav-phone">📞 0419 990 092</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>24/7 Emergency Plumber Melbourne – Rapid Response Guaranteed</h1>
+            <p>Don't let a plumbing disaster wait. Our licensed Melbourne experts provide fast, reliable repairs for burst pipes, blocked drains, and hot water issues any time, day or night.</p>
+            <a href="tel:+61419990092" class="cta-button">Call 0419 990 092 Now</a>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Expert Services</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Emergency Plumbing</h3>
+                    <p>Available 24 hours a day for urgent repairs including burst pipes, gas leaks, and major flooding to protect your property from damage.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Hot Water Systems</h3>
+                    <p>Fast repair and replacement of electric, gas, and solar hot water units. We'll ensure you have steaming hot water back today, guaranteed.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Blocked Drain Clearing</h3>
+                    <p>Using advanced CCTV inspections and high-pressure jet rodding to clear stubborn clogs and restore your drainage system efficiently.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2>Local Plumbing Experts</h2>
+                <p>Melbourne 24 Hour Plumbing is a locally owned and operated team of fully licensed professionals dedicated to serving the Melbourne community. With a 4-star rating and a commitment to transparent pricing, we bridge the gap between emergency speed and high-quality workmanship.</p>
+                <p>Whether it's a midnight leak or a scheduled renovation, we treat every home with the respect it deserves, ensuring a clean and durable fix every time.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="faq-container">
+                <details>
+                    <summary>How quickly can a plumber arrive at my Melbourne home?</summary>
+                    <div class="faq-content">
+                        For emergencies, we prioritize your call and aim to have a licensed plumber at your door within the hour, depending on your specific location in Melbourne.
+                    </div>
+                </details>
+                <details>
+                    <summary>Do you charge extra for after-hours or weekend call-outs?</summary>
+                    <div class="faq-content">
+                        We provide upfront, transparent pricing before any work begins. While emergency rates apply after-hours, we guarantee no hidden fees and honest quotes.
+                    </div>
+                </details>
+                <details>
+                    <summary>Are your plumbers fully licensed and insured?</summary>
+                    <div class="faq-content">
+                        Yes, every member of our team is fully qualified, licensed by the VBA, and comprehensively insured to give you complete peace of mind.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo">MELBOURNE <span>24HR</span> PLUMBING</div>
+            <div class="footer-contact">
+                <p>Available 24/7 Across Melbourne, VIC</p>
+                <a href="tel:+61419990092" class="footer-phone">0419 990 092</a>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2023 Melbourne 24 Hour Plumbing. Fully Licensed & Insured. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
