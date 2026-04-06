@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gridless Plumber Melbourne | 24/7 Emergency Plumbing & Repairs</title>
+    <meta name="description" content="Need a reliable plumber in Melbourne? Gridless offers 24/7 emergency repairs, blocked drain clearing, and hot water services. Rated 4.9/5 by 360+ customers. Call +61 483 917 472.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Gridless Plumber Melbourne | 24/7 Emergency Plumbing & Repairs">
+    <meta property="og:description" content="Expert Melbourne Plumbers available 24/7. Trusted by 360+ locals for fast, honest service.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gridlessplumbing.com.au">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap');
+
+        :root {
+            --primary: #00529B;
+            --accent: #FF6B00;
+            --accent-hover: #e66000;
+            --text-dark: #1a1a1a;
+            --text-light: #f4f4f4;
+            --white: #ffffff;
+            --gray: #f8f9fa;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: -0.5px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header & Navigation */
+        header {
+            background: var(--white);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo-box {
+            background: var(--primary);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+
+        .nav-phone {
+            color: var(--primary);
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, #003a6e 100%);
+            color: var(--white);
+            padding: 100px 0 140px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background: var(--white);
+            clip-path: polygon(0 100%, 100% 100%, 100% 0);
+        }
+
+        .hero-headline {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 20px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.1;
+        }
+
+        .hero-subheadline {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            opacity: 0.9;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--white);
+            padding: 18px 36px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(255, 107, 0, 0.4);
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            background: var(--accent-hover);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 107, 0, 0.6);
+        }
+
+        /* Services Section */
+        .services {
+            padding: 100px 0;
+            background: var(--white);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .section-title h2::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--accent);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: var(--transition);
+            border-bottom: 4px solid transparent;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            border-bottom: 4px solid var(--accent);
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(0, 82, 155, 0.1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            color: var(--primary);
+        }
+
+        .service-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+            color: var(--primary);
+        }
+
+        /* About Section */
+        .about {
+            padding: 100px 0;
+            background: var(--gray);
+        }
+
+        .about-flex {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            flex-wrap: wrap;
+        }
+
+        .about-content {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .about-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 25px;
+            color: var(--primary);
+        }
+
+        .about-content p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .rating-badge {
+            display: inline-flex;
+            align-items: center;
+            background: var(--white);
+            padding: 15px 25px;
+            border-radius: 50px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-top: 20px;
+        }
+
+        .stars {
+            color: #FFD700;
+            font-size: 1.2rem;
+            margin-right: 10px;
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 100px 0;
+            background: var(--white);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        details {
+            background: var(--gray);
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        summary {
+            padding: 20px 25px;
+            cursor: pointer;
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary);
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            outline: none;
+        }
+
+        summary::after {
+            content: "+";
+            font-size: 1.5rem;
+            color: var(--accent);
+            transition: var(--transition);
+        }
+
+        details[open] summary::after {
+            transform: rotate(45deg);
+        }
+
+        details[open] {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .faq-answer {
+            padding: 0 25px 20px;
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary);
+            color: var(--white);
+            padding: 80px 0 40px;
+            text-align: center;
+        }
+
+        .footer-cta {
+            margin-bottom: 50px;
+        }
+
+        .footer-cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .footer-phone {
+            font-size: 2rem;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 800;
+            display: block;
+            margin: 20px 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .footer-bottom {
+            padding-top: 40px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-headline { font-size: 2.2rem; }
+            .section-title h2 { font-size: 2rem; }
+            .about-flex { gap: 30px; }
+            .footer-cta h2 { font-size: 1.8rem; }
+            .footer-phone { font-size: 1.5rem; }
+        }
+
+        /* Subtle Animation */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero-headline, .hero-subheadline, .cta-container {
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        .hero-subheadline { animation-delay: 0.2s; }
+        .cta-container { animation-delay: 0.4s; }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">
+                    <span class="logo-box">G</span> GRIDLESS
+                </a>
+                <a href="tel:+61483917472" class="nav-phone">Call: 0483 917 472</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-headline">Expert Melbourne Plumbers Available 24/7 for Your Home and Business</h1>
+            <p class="hero-subheadline">Highly rated plumbing services across Melbourne with over 360 five-star reviews. Fast response, transparent pricing, and guaranteed workmanship.</p>
+            <div class="cta-container">
+                <a href="tel:+61483917472" class="cta-button">Request an Urgent Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Expert Services</h2>
+            </div>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3>Emergency Plumbing Repairs</h3>
+                    <p>Rapid response for burst pipes, major leaks, and gas emergencies. Our team is on call 24/7 to secure your property and prevent water damage.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 15 5 5 5-5"/><path d="m7 9 5-5 5 5"/></svg>
+                    </div>
+                    <h3>Blocked Drains & Jetting</h3>
+                    <p>Using advanced CCTV drain cameras and high-pressure water jetting, we clear the most stubborn blockages and provide long-term solutions for your pipes.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="m4.93 4.93 14.14 14.14"/><path d="M2 12h20"/><path d="m19.07 4.93-14.14 14.14"/></svg>
+                    </div>
+                    <h3>Hot Water Systems</h3>
+                    <p>Expert installation, repair, and maintenance for all gas, electric, and solar hot water units. We ensure your Melbourne home never runs out of hot water.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-flex">
+                <div class="about-content">
+                    <h2>Melbourne's Trusted Local Professionals</h2>
+                    <p>Gridless is Melbourne's trusted name in professional plumbing. With a stellar 4.9-star rating from over 360 local customers, we pride ourselves on delivering high-quality, reliable, and honest plumbing solutions.</p>
+                    <p>Whether you are dealing with a midnight emergency or planning a major renovation, our licensed technicians bring years of experience and state-of-the-art equipment to every job. We are committed to transparency, punctuality, and leaving every workspace cleaner than we found it.</p>
+                    
+                    <div class="rating-badge">
+                        <span class="stars">★★★★★</span>
+                        <strong>4.9/5 Rating (360+ Reviews)</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Common Questions</h2>
+            </div>
+            <div class="faq-container">
+                <details>
+                    <summary>Do you offer emergency plumbing in Melbourne after hours?</summary>
+                    <div class="faq-answer">
+                        <p>Yes, Gridless provides 24/7 emergency plumbing services across all Melbourne suburbs. No matter the time, our technicians are ready to assist with urgent repairs.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>Are your plumbers licensed and insured?</summary>
+                    <div class="faq-answer">
+                        <p>Absolutely. All Gridless plumbers are fully licensed, qualified, and insured to perform residential and commercial plumbing work in Victoria, adhering to all Australian standards.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>Do you provide upfront pricing?</summary>
+                    <div class="faq-answer">
+                        <p>We believe in transparency. We provide clear, fixed-price quotes before any work begins, ensuring you won't be hit with hidden fees or unexpected costs on your final invoice.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-cta">
+                <h2>Ready to get started?</h2>
+                <p>Call our licensed team today for rapid Melbourne service.</p>
+                <a href="tel:+61483917472" class="footer-phone">+61 483 917 472</a>
+                <a href="tel:+61483917472" class="cta-button">Request an Urgent Quote</a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Gridless Plumbing & Gas. All Rights Reserved.</p>
+                <p>Melbourne, Victoria | Fully Licensed & Insured</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
