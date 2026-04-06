@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expert Plumber South Melbourne | Velaqua Plumbing | 5-Star Service</title>
+    <meta name="description" content="Velaqua Plumbing offers professional plumbing, hot water, and gas fitting services in South Melbourne, VIC. Rated 5 stars with 175+ reviews. Call +61 402 417 328 today.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Expert Plumber South Melbourne | Velaqua Plumbing">
+    <meta property="og:description" content="Professional plumbing, hot water, and gas fitting services in South Melbourne. Trusted local experts.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://velaquaplumbing.com.au">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;500;600&display=swap');
+
+        :root {
+            --primary: #0056b3;
+            --primary-dark: #003d7a;
+            --accent: #f39c12;
+            --accent-hover: #e67e22;
+            --text-dark: #1a1a1a;
+            --text-light: #f9f9f9;
+            --gray-bg: #f4f7fa;
+            --white: #ffffff;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.2;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header & Nav */
+        header {
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 15px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .nav-phone {
+            background: var(--primary);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .nav-phone:hover {
+            background: var(--primary-dark);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: var(--white);
+            padding: 100px 0 120px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://www.transparenttextures.com/patterns/cubes.png');
+            opacity: 0.1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 35px;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--white);
+            padding: 18px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            box-shadow: 0 4px 15px rgba(243, 156, 18, 0.4);
+            transition: var(--transition);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            background: var(--accent-hover);
+            box-shadow: 0 6px 20px rgba(243, 156, 18, 0.6);
+        }
+
+        /* Services Section */
+        .services {
+            padding: 100px 0;
+            background: var(--gray-bg);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: var(--transition);
+            border-bottom: 4px solid transparent;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent);
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(0, 86, 179, 0.1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+        }
+
+        .service-icon svg {
+            width: 30px;
+            height: 30px;
+            fill: var(--primary);
+        }
+
+        .service-card h3 {
+            margin-bottom: 15px;
+            color: var(--primary-dark);
+        }
+
+        /* About Section */
+        .about {
+            padding: 100px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .about-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-image {
+            background: var(--primary);
+            border-radius: 20px;
+            height: 400px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .about-image::after {
+            content: "175+ 5-Star Reviews";
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            background: var(--accent);
+            color: white;
+            padding: 20px;
+            font-weight: 700;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .about-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--primary-dark);
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 100px 0;
+            background: var(--gray-bg);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        details {
+            background: var(--white);
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        summary {
+            padding: 20px 25px;
+            font-weight: 600;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--primary-dark);
+            font-size: 1.1rem;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--accent);
+        }
+
+        details[open] summary::after {
+            content: '−';
+        }
+
+        .faq-content {
+            padding: 0 25px 20px;
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary-dark);
+            color: var(--white);
+            padding: 80px 0 30px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .footer-logo {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 1.8rem;
+            color: var(--white);
+            text-decoration: none;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .footer-logo span {
+            color: var(--accent);
+        }
+
+        .footer-contact h4 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: var(--accent);
+        }
+
+        .footer-contact p {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .about-wrapper {
+                grid-template-columns: 1fr;
+            }
+            .about-image {
+                order: 2;
+                height: 300px;
+            }
+            .about-image::after {
+                right: 10px;
+            }
+            .nav-phone {
+                padding: 8px 15px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">VELAQUA<span>PLUMBING</span></a>
+                <a href="tel:+61402417328" class="nav-phone">Call +61 402 417 328</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Trusted Plumbers in South Melbourne & Surrounds</h1>
+                <p>Experience 5-star service with Velaqua Plumbing. From emergency repairs to hot water installations, we keep South Melbourne flowing.</p>
+                <a href="tel:+61402417328" class="cta-button">Request a Free Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Specialist Services</h2>
+                <p>Reliable solutions for residential and commercial plumbing needs.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12,2L4.5,20.29L5.21,21L12,18L18.79,21L19.5,20.29L12,2Z"/></svg>
+                    </div>
+                    <h3>Emergency Plumbing</h3>
+                    <p>Available for urgent repairs including burst pipes, major leaks, and sewer backups to protect your property from water damage.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/></svg>
+                    </div>
+                    <h3>Hot Water Systems</h3>
+                    <p>Expert installation, repair, and maintenance for all gas, electric, and solar hot water units to ensure you never run out of heat.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24"><path d="M17,18L12,15.82L7,18V5H17M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"/></svg>
+                    </div>
+                    <h3>Blocked Drains & Gas</h3>
+                    <p>Advanced drain clearing technology and certified gas fitting services for appliance installations and safety inspections.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-image">
+                    <svg width="150" height="150" viewBox="0 0 24 24" fill="white" opacity="0.2">
+                        <path d="M21,16.5C21,16.88 20.79,17.21 20.47,17.38L12.57,21.82C12.41,21.94 12.21,22 12,22C11.79,22 11.59,21.94 11.43,21.82L3.53,17.38C3.21,17.21 3,16.88 3,16.5V7.5C3,7.12 3.21,6.79 3.53,6.62L11.43,2.18C11.59,2.06 11.79,2 12,2C12.21,2 12.41,2.06 12.57,2.18L20.47,6.62C20.79,6.79 21,7.12 21,7.5V16.5Z" />
+                    </svg>
+                </div>
+                <div class="about-text">
+                    <h2>South Melbourne's Premier Plumbing Specialists</h2>
+                    <p>Velaqua Plumbing is South Melbourne’s premier plumbing specialist, backed by over 175 five-star reviews. We pride ourselves on delivering honest, reliable, and high-quality workmanship to our local community. Whether it's a minor leak or a major commercial project, our licensed team treats every job with the same level of professionalism and attention to detail that our reputation is built upon.</p>
+                    <br>
+                    <p>Our commitment to excellence ensures that every South Melbourne home and business receives the highest standard of care and technical expertise.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about our services.</p>
+            </div>
+            <div class="faq-container">
+                <details>
+                    <summary>Do you provide emergency plumbing in South Melbourne?</summary>
+                    <div class="faq-content">
+                        <p>Yes, we offer rapid response services for plumbing emergencies across South Melbourne and the surrounding suburbs to address urgent issues immediately.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>Are you fully licensed and insured?</summary>
+                    <div class="faq-content">
+                        <p>Absolutely. Velaqua Plumbing is fully licensed in Victoria and carries comprehensive insurance for your complete peace of mind.</p>
+                    </div>
+                </details>
+                <details>
+                    <summary>How do you charge for your plumbing services?</summary>
+                    <div class="faq-content">
+                        <p>We provide transparent, upfront pricing based on the specific requirements of your job. Contact us at +61 402 417 328 for a detailed estimate.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="#" class="footer-logo">VELAQUA<span>PLUMBING</span></a>
+                    <p>Your local experts in high-quality plumbing and gas solutions. Proudly serving South Melbourne and surrounds.</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Get In Touch</h4>
+                    <p><strong>Phone:</strong> <a href="tel:+61402417328" style="color: white; text-decoration: none;">+61 402 417 328</a></p>
+                    <p><strong>Location:</strong> South Melbourne, VIC</p>
+                    <p><strong>Available:</strong> 24/7 Emergency Support</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Our Services</h4>
+                    <p>Emergency Repairs</p>
+                    <p>Hot Water Systems</p>
+                    <p>Gas Fitting</p>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 Velaqua Plumbing. All Rights Reserved. Licensed & Insured Plumbers Victoria.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
