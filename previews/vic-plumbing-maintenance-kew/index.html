@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plumber Kew | 24/7 Emergency Service | VIC Plumbing Maintenance</title>
+    <meta name="description" content="Looking for a reliable plumber in Kew? VIC Plumbing Maintenance offers 5-star rated emergency repairs, hot water service, and gas fitting. Call 0400 299 447 for fast service.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Plumber Kew | 24/7 Emergency Service | VIC Plumbing Maintenance">
+    <meta property="og:description" content="Looking for a reliable plumber in Kew? 5-star rated emergency repairs, hot water service, and gas fitting.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vicplumbingmaintenance.com.au">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap');
+
+        :root {
+            --primary: #004a99;
+            --accent: #f58220;
+            --dark: #1a1a1a;
+            --light: #f9f9f9;
+            --white: #ffffff;
+            --shadow: 0 10px 30px rgba(0,0,0,0.1);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: -0.5px;
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--white);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .logo {
+            font-weight: 800;
+            font-size: 1.4rem;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .nav-cta {
+            background: var(--primary);
+            color: var(--white);
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .nav-cta:hover {
+            background: var(--accent);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(0,74,153,0.95) 0%, rgba(0,30,60,0.9) 100%), 
+                        url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=1920');
+            background-size: cover;
+            background-position: center;
+            padding: 120px 5% 100px;
+            color: var(--white);
+            text-align: center;
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            max-width: 900px;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+
+        .hero p {
+            font-size: clamp(1.1rem, 2vw, 1.3rem);
+            max-width: 700px;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        .btn-main {
+            background: var(--accent);
+            color: var(--white);
+            padding: 20px 40px;
+            font-size: 1.2rem;
+            font-weight: 800;
+            text-decoration: none;
+            border-radius: 4px;
+            display: inline-block;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(245, 130, 32, 0.4);
+            text-transform: uppercase;
+        }
+
+        .btn-main:hover {
+            transform: translateY(-3px);
+            background: #e07210;
+            box-shadow: 0 6px 20px rgba(245, 130, 32, 0.5);
+        }
+
+        /* Services Section */
+        .services {
+            padding: 100px 5%;
+            background: var(--light);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--accent);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border-bottom: 5px solid transparent;
+            text-align: center;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-bottom: 5px solid var(--accent);
+        }
+
+        .service-card h3 {
+            margin-bottom: 20px;
+            color: var(--primary);
+            font-size: 1.4rem;
+        }
+
+        .service-card p {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        /* About Section */
+        .about {
+            padding: 100px 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-content h2 {
+            font-size: 2.2rem;
+            margin-bottom: 25px;
+            color: var(--primary);
+        }
+
+        .about-content p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .rating-badge {
+            background: #fef4e8;
+            border-left: 4px solid var(--accent);
+            padding: 20px;
+            margin-top: 30px;
+            font-weight: 600;
+        }
+
+        .about-img {
+            width: 100%;
+            height: 400px;
+            background: url('https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&q=80&w=800');
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 100px 5%;
+            background: var(--light);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        details {
+            background: var(--white);
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: var(--transition);
+        }
+
+        summary {
+            padding: 25px;
+            font-weight: 700;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--primary);
+            font-family: 'Montserrat', sans-serif;
+            outline: none;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--accent);
+        }
+
+        details[open] summary::after {
+            content: '−';
+        }
+
+        details p {
+            padding: 0 25px 25px;
+            color: #555;
+            line-height: 1.7;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary);
+            color: var(--white);
+            padding: 80px 5% 40px;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-info h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .footer-info p {
+            font-size: 1.2rem;
+            opacity: 0.8;
+            margin-bottom: 40px;
+        }
+
+        .footer-phone {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--accent);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 40px;
+            transition: var(--transition);
+        }
+
+        .footer-phone:hover {
+            opacity: 0.9;
+        }
+
+        .copyright {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 40px;
+            font-size: 0.9rem;
+            opacity: 0.6;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .about {
+                grid-template-columns: 1fr;
+            }
+            .about-img {
+                order: -1;
+                height: 300px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding-top: 80px;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .footer-phone {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#" class="logo">VIC <span>PLUMBING</span></a>
+        <a href="tel:+61400299447" class="nav-cta">0400 299 447</a>
+    </nav>
+
+    <header class="hero">
+        <h1>Trusted 24/7 Plumbers in Kew – 5-Star Service Guaranteed</h1>
+        <p>From blocked drains to hot water repairs, VIC Plumbing Maintenance provides fast, reliable, and professional solutions across Kew. Join over 120 locals who rate us 5 stars for quality workmanship.</p>
+        <a href="tel:+61400299447" class="btn-main">Call 0400 299 447</a>
+    </header>
+
+    <section class="services" id="services">
+        <div class="section-title">
+            <h2>Our Specialist Services</h2>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>24/7 Emergency Plumbing</h3>
+                <p>Burst pipes, major leaks, or overflowing toilets? Our local Kew team is on standby around the clock to prevent water damage and restore your home’s safety fast.</p>
+            </div>
+            <div class="service-card">
+                <h3>Hot Water Repairs & Installation</h3>
+                <p>Expert servicing and replacement of gas, electric, and solar hot water systems. We ensure you never have to settle for a cold shower again with same-day service available.</p>
+            </div>
+            <div class="service-card">
+                <h3>Blocked Drains & Gas Fitting</h3>
+                <p>Using advanced CCTV cameras and high-pressure jetters, we clear stubborn blockages for good. We also provide licensed gas fitting for leak detection and appliance installation.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2>Reliable Plumbing in Kew</h2>
+            <p>VIC Plumbing Maintenance is Kew’s premier choice for residential and commercial plumbing needs. With a perfect 5-star Google rating and over 120 verified reviews, we have built a reputation for punctuality, transparent pricing, and expert problem-solving.</p>
+            <p>We are fully licensed, insured, and dedicated to providing the Kew community with plumbing services that stand the test of time.</p>
+            <div class="rating-badge">
+                ★ 5.0 Rating | 120+ Verified Reviews
+            </div>
+        </div>
+        <div class="about-img"></div>
+    </section>
+
+    <section class="faq-section">
+        <div class="section-title">
+            <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-container">
+            <details>
+                <summary>Do you offer emergency plumbing in Kew after hours?</summary>
+                <p>Yes, we provide 24/7 emergency plumbing services throughout Kew and surrounding suburbs. No matter the time, our team is ready to respond to your urgent plumbing needs.</p>
+            </details>
+            <details>
+                <summary>How much do your plumbing services cost?</summary>
+                <p>We pride ourselves on transparent, upfront pricing. We provide clear quotes before any work begins, ensuring there are no hidden fees or surprises upon completion.</p>
+            </details>
+            <details>
+                <summary>Are your plumbers licensed and insured?</summary>
+                <p>Absolutely. All our technicians are fully licensed VIC plumbers and gas fitters, and we carry comprehensive public liability insurance for your peace of mind.</p>
+            </details>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h2>VIC Plumbing Maintenance</h2>
+                <p>Kew, Victoria | Professional Trade Solutions</p>
+                <a href="tel:+61400299447" class="footer-phone">0400 299 447</a>
+            </div>
+            <div class="copyright">
+                &copy; 2023 VIC Plumbing Maintenance. Licensed & Insured Victoria Plumbers.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
